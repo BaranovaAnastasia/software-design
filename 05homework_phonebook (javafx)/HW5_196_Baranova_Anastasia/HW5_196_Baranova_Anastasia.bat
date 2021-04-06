@@ -1,0 +1,1 @@
+java --module-path %1 --add-modules javafx.controls,javafx.fxml,javafx.graphics -jar HW5_196_Baranova_Anastasia.jar

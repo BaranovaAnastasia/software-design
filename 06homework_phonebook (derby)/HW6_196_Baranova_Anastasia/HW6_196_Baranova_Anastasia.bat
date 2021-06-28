@@ -1,0 +1,1 @@
+java --module-path %1 --add-modules javafx.controls,javafx.fxml,javafx.graphics -cp HW6_196_Baranova_Anastasia.jar;%2\derbyrun.jar  phonebook.Main

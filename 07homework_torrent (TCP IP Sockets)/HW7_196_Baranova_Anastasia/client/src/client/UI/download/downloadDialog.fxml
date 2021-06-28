@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.*?>
+<AnchorPane fx:id="pane" maxHeight="250.0" maxWidth="400.0" minHeight="207.0" minWidth="400.0" prefHeight="207.0"
+            prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="client.UI.download.DownloadDialogController">
+    <Text layoutX="140.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Download File"
+          AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="8.0">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Text>
+    <HBox layoutX="52.0" layoutY="126.0" prefHeight="25.0" prefWidth="290.0" AnchorPane.leftAnchor="55.0"
+          AnchorPane.rightAnchor="55.0" AnchorPane.topAnchor="126.0">
+        <TextField fx:id="pathField" prefHeight="25.0" prefWidth="217.0">
+            <HBox.margin>
+                <Insets right="5.0"/>
+            </HBox.margin>
+        </TextField>
+        <Button mnemonicParsing="false" onAction="#openFileBrowser" prefWidth="70.0"
+                text="Browse..."/>
+    </HBox>
+    <Text layoutX="55.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Save to:"
+          AnchorPane.leftAnchor="55.0" AnchorPane.topAnchor="107.0">
+        <font>
+            <Font size="14.0"/>
+        </font>
+    </Text>
+    <Line endX="303.0000305175781" endY="1.1444091796875E-5" layoutX="101.0" layoutY="33.0" startX="-100.0"
+          AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="35.0"/>
+    <Button fx:id="download" layoutX="196.0" layoutY="165.0" maxHeight="75.0" minWidth="74.0" mnemonicParsing="false"
+            onAction="#selected" prefWidth="70.0" text="Download" AnchorPane.rightAnchor="130.0"
+            AnchorPane.topAnchor="165.0"/>
+    <Button fx:id="cancel" layoutX="282.0" layoutY="118.0" mnemonicParsing="false" onAction="#cancel" prefWidth="70.0"
+            text="Cancel" AnchorPane.rightAnchor="55.0" AnchorPane.topAnchor="165.0"/>
+    <Text layoutX="55.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="File Info:"
+          AnchorPane.leftAnchor="55.0" AnchorPane.topAnchor="49.0">
+        <font>
+            <Font size="14.0"/>
+        </font>
+    </Text>
+    <HBox layoutX="55.0" layoutY="68.0" prefHeight="25.0" prefWidth="283.0" AnchorPane.leftAnchor="55.0"
+          AnchorPane.rightAnchor="55.0" AnchorPane.topAnchor="68.0">
+        <TextField fx:id="fileName" editable="false" prefHeight="25.0" prefWidth="217.0">
+            <HBox.margin>
+                <Insets right="5.0"/>
+            </HBox.margin>
+        </TextField>
+        <TextField fx:id="fileSize" editable="false" prefHeight="25.0" prefWidth="70.0"/>
+    </HBox>
+</AnchorPane>

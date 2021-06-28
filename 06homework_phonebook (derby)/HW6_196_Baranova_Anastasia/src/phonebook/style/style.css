@@ -1,0 +1,4 @@
+.warning {
+    -fx-border-color: red;
+    -fx-border-radius: 3;
+}
